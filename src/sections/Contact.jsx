@@ -6,15 +6,15 @@ import {
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center w-full mb-40">
+    <div className="flex flex-col items-center w-full mt-20 mb-40">
       <h2 className=" text-3xl font-semibold pt-9 ">Contactame!</h2>
-      <div className="flex mt-3">
-        <p className=" text-lg font-normal w-[600px] mr-20 ">
-          Si deseas contactarte conmigo puedes hacerlo a travez de mi email a
+      <div className="flex mt-3 justify-around">
+        <p className=" text-lg font-normal w-[600px] mr-6 ">
+          Si deseas contactarte conmigo puedes hacerlo a
           <span className="font-bold"> pedevillae@gmail.com</span> o via
           linkedin
         </p>
-        <div className=" w-[40%] flex flex-col">
+        <div className="flex flex-col border-l pl-3 ">
           <a
             className="flex items-center"
             href={"/CV.pdf"}
