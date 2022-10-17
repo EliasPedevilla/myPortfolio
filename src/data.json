@@ -1,57 +1,89 @@
 {
   "projects": [
     {
-      "id":1,
-      "imgPath":"/DisneyWorldAPI.jpg",
-      "title":"Disney World API",
-      "description":"Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
+      "id": 1,
+      "imgPath": "/disneyWorldAPI.webp",
+      "title": "Disney World AAPI",
+      "description": "Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
       "demoLink": "/",
-      "ghLink":"/"
-    },{
-      "id":2,
-      "imgPath":"/memoriadelviaje.jpg",
-      "title":"Memoria del viaje",
-      "description":"Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
-      "demoLink": "https://memoria-del-viaje.vercel.app/",
-      "ghLink":"https://github.com/EliasPedevilla/Memoria-del-viaje"
-    },{
-      "id":3,
-      "imgPath":"/dondecomer.jpg",
-      "title":"dondecomer API",
-      "description":"Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
-      "demoLink": "",
-      "ghLink":"https://github.com/EliasPedevilla/API-dondecomer.com"
-    }],
-  "skils":[
+      "ghLink": "/"
+    },
     {
-      "id":1,
-      "name":"Node",
-      "iconPath":"/icons/nodeJS.svg",
+      "id": 2,
+      "imgPath": "/memoriadelviaje.webp",
+      "title": "Memoria del viaje",
+      "description": "Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
+      "demoLink": "https://memoria-del-viaje.vercel.app/",
+      "ghLink": "https://github.com/EliasPedevilla/Memoria-del-viaje"
+    },
+    {
+      "id": 3,
+      "imgPath": "/dondecomer.webp",
+      "title": "dondecomer API",
+      "description": "Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
+      "demoLink": "",
+      "ghLink": "https://github.com/EliasPedevilla/API-dondecomer.com"
+    }
+  ],
+  "skils": [
+    {
+      "id": 1,
+      "name": "Node",
+      "iconPath": "/icons/nodeJS.svg",
       "bgColor": "bg-[#3c873a]"
     },
     {
-      "id":2,
-      "name":"Express",
-      "iconPath":"/icons/expressJS.svg",
+      "id": 2,
+      "name": "Express",
+      "iconPath": "/icons/expressJS.svg",
       "bgColor": "bg-[#e6e6e6]"
     },
     {
-      "id":3,
-      "name":"React",
-      "iconPath":"/icons/react.svg",
+      "id": 3,
+      "name": "React",
+      "iconPath": "/icons/react.svg",
       "bgColor": "bg-[#61dbfb]"
     },
     {
-      "id":5,
-      "name":"SQL",
-      "iconPath":"/icons/SQL.svg",
+      "id": 5,
+      "name": "SQL",
+      "iconPath": "/icons/SQL.svg",
       "bgColor": "bg-[#00758f]"
     },
     {
-      "id":4,
-      "name":"MongoDB",
-      "iconPath":"/icons/mongo.svg",
+      "id": 4,
+      "name": "MongoDB",
+      "iconPath": "/icons/mongo.svg",
       "bgColor": "bg-[#4db33d]"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "title": "Aceleracion NodeJS - Alkemy",
+      "description": "Agosto 2022 - Octubre 2022"
+    },
+    {
+      "id": 2,
+      "title": "Escuela Backend con NodeJS - Platzi",
+      "description": "Agosto 2021 - Actualidad"
+    },
+    {
+      "id": 3,
+      "title": "Sec. Tecnico - Nro 34 Aristides Bratti",
+      "description": "Marzo 2010 - Diciembre 2017"
+    }
+  ],
+  "workExperience": [
+    {
+      "id": 1,
+      "title": "Freelance - Full Stack Developer",
+      "description": "Enero 2022 - Actualidad"
+    },
+    {
+      "id": 2,
+      "title": "Side projects",
+      "description": "Septiembre 2021 - Actualidad"
     }
   ]
 }
