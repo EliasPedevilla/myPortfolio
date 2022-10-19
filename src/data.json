@@ -3,10 +3,10 @@
     {
       "id": 1,
       "imgPath": "/disneyWorldAPI.webp",
-      "title": "Disney World AAPI",
+      "title": "Disney World API",
       "description": "Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
-      "demoLink": "/",
-      "ghLink": "/"
+      "demoLink": "",
+      "ghLink": "https://github.com/EliasPedevilla/API-dondecomer.com"
     },
     {
       "id": 2,

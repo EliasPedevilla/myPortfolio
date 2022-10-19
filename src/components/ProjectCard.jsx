@@ -1,35 +1,31 @@
 import { IoIosRocket } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
+import ButtonWhite from "./ButtonWhite";
+import ButtonDark from "./ButtonDark";
 
 const ProjectCard = (props) => {
   return (
-    <div className="flex flex-col w-[300px] p-4 bg-gray-900 text-white rounded">
-      <img className=" rounded h-[160px] " src={props.imgPath} alt="card-img" />
-      <div className="pt-3 ">
-        <h3 className=" text-lg font-semibold py-1 ">{props.title}</h3>
+    <div className="flex flex-col w-[300px] bg-gray-900 text-white rounded-xl">
+      <img
+        className=" rounded-t-xl w-full h-[160px] "
+        src={props.imgPath}
+        alt="card-img"
+      />
+      <div className="pt-3 flex flex-col p-7">
+        <h3 className=" text-xl font-semibold py-1 ">{props.title}</h3>
         <p className="text-sm font-normal">{props.description}</p>
-        <div className="flex justify-evenly pt-4 ">
-          {props.ghLink !== undefined && (
-            <a
-              className="flex items-center rounded px-3 bg-white text-gray-900 "
-              href={props.ghLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p className="mr-3 font-medium "> Code </p>
+        <div className="flex flex-col items-center ">
+          {props.ghLink && (
+            <ButtonDark href={props.ghLink}>
+              <p className="mr-3 text-base font-semibold "> Ver codigo </p>
               <BsGithub />
-            </a>
+            </ButtonDark>
           )}
-          {props.demoLink !== undefined && (
-            <a
-              className="flex items-center rounded px-3 bg-white text-gray-900"
-              href={props.demoLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p className="mr-3 font-medium "> Demo </p>
+          {props.demoLink && (
+            <ButtonWhite demoLink={props.demoLink}>
+              <p className="mr-3 text-base font-semibold "> Ver demo </p>
               <IoIosRocket />
-            </a>
+            </ButtonWhite>
           )}
         </div>
       </div>

@@ -3,18 +3,31 @@ import {
   BsGithub,
   BsLinkedin,
 } from "react-icons/bs";
+import { FiArrowUpRight } from "react-icons/fi";
+import ButtonWhite from "../components/ButtonWhite";
+import ButtonDark from "../components/ButtonDark";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center w-full mt-20 mb-40">
-      <h2 className=" text-3xl font-semibold pt-9 ">Contactame!</h2>
-      <div className="flex mt-3 justify-around">
-        <p className=" text-lg font-normal w-[600px] mr-6 ">
-          Si deseas contactarte conmigo puedes hacerlo a
-          <span className="font-bold"> pedevillae@gmail.com</span> o via
-          linkedin
-        </p>
-        <div className="flex flex-col border-l pl-3 ">
+    <div className=" box-border ">
+      <div
+        className="flex flex-col items-center w-full mt-20 mb-40"
+        id="contact"
+      >
+        <h2 className=" text-3xl font-semibold pt-9 ">Contactame!</h2>
+        <div className="w-[250px] mt-12">
+          <ButtonDark href="mailto:pedevillae@gmail.com">
+            <p className="mr-3 text-base font-semibold ">Enviame un mail</p>
+            <FiArrowUpRight />
+          </ButtonDark>
+          <ButtonWhite href="api.whatsapp.com/send?phone=542664171152">
+            <p className="mr-3 text-base font-semibold ">
+              Escribime a WhatsApp
+            </p>
+            <FiArrowUpRight />
+          </ButtonWhite>
+        </div>
+        <div className="flex mt-[120px] ">
           <a
             className="flex items-center"
             href={"/CV.pdf"}
@@ -25,7 +38,7 @@ const Contact = () => {
             <div className="text-2xl mx-3">
               <BsFileEarmarkArrowDownFill />
             </div>
-            <p className="text-lg font-bold my-3">Descarga mi CV</p>
+            <p className="text-lg font-bold my-3">Mi CV</p>
           </a>
           <a
             className="flex items-center "
@@ -34,7 +47,6 @@ const Contact = () => {
             <div className="text-2xl mx-3">
               <BsGithub />
             </div>
-            <p className="text-lg font-bold my-3">GitHub</p>
           </a>
           <a
             className="flex items-center"
@@ -43,7 +55,6 @@ const Contact = () => {
             <div className="text-2xl mx-3">
               <BsLinkedin />
             </div>
-            <p className="text-lg font-bold my-3">LinkedIn</p>
           </a>
         </div>
       </div>
