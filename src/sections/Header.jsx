@@ -1,4 +1,8 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import {
+  BsLinkedin,
+  BsGithub,
+  BsFileEarmarkArrowDownFill,
+} from "react-icons/bs";
 
 const Header = () => {
   return (
@@ -6,12 +10,34 @@ const Header = () => {
       <div className="flex flex-col items-center ">
         <h1 className=" text-[50px] font-bold font-sans">Elias Pedevilla</h1>
         <p className=" text-3xl font-light ">Backend Developer</p>
-        <div className="flex mt-3">
-          <a className=" text-2xl mx-3 " href="">
-            <BsGithub />
+        <div className="flex">
+          <a
+            className="flex items-center"
+            href={"/CV.pdf"}
+            target="blank"
+            rel="noopener noreferrer"
+            download="CV Elias Pedevilla - Backend Developer.pdf"
+          >
+            <div className="text-2xl mx-3">
+              <BsFileEarmarkArrowDownFill />
+            </div>
+            <p className="text-lg font-bold my-3">Mi CV</p>
           </a>
-          <a className=" text-2xl mx-3" href="">
-            <BsLinkedin />
+          <a
+            className="flex items-center "
+            href="https://github.com/EliasPedevilla"
+          >
+            <div className="text-2xl mx-3">
+              <BsGithub />
+            </div>
+          </a>
+          <a
+            className="flex items-center"
+            href="https://www.linkedin.com/in/elias-pedevilla-54ab1023a/"
+          >
+            <div className="text-2xl mx-3">
+              <BsLinkedin />
+            </div>
           </a>
         </div>
       </div>
