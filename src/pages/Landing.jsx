@@ -3,17 +3,19 @@ import Header from "../sections/Header";
 import Projects from "../sections/Projects";
 import AboutMe from "../sections/AboutMe";
 import Contact from "../sections/Contact";
+import Footer from "../components/Footer";
 
 const Landing = () => {
   return (
     <>
+      <Navbar />
       <main>
-        <Navbar />
         <Header />
         <Projects />
         <AboutMe />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 };
