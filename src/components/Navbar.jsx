@@ -1,21 +1,25 @@
 import { useState } from "react";
 import { AiFillHome, AiFillFolder, AiFillMessage } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Nav = () => {
-  // eslint-disable-next-line no-unused-vars
   const [showTitles, setShowTitles] = useState(false);
   return (
     <>
       <div className="fixed z-20 h-screen flex justify-center ">
-        <div
+        <nav
           onMouseEnter={() => setShowTitles(true)}
           onMouseLeave={() => setShowTitles(false)}
-          className="flex flex-col justify-center items-start pl-3 "
+          className="flex flex-col justify-center items-start pl-3 w-auto "
         >
-          <a
-            href="#"
-            className="flex items-center my-9 hover:bg-gray-300 rounded-full transition-all duration-250 "
+          <Link
+            to="header"
+            smooth={true}
+            duration={500}
+            className={`flex items-center my-9 hover:bg-gray-300 hover:shadow-md rounded-full transition-all duration-250 cursor-pointer ${
+              showTitles && "bg-white"
+            } `}
           >
             <div className="text-3xl p-2">
               <AiFillHome />
@@ -27,10 +31,14 @@ const Nav = () => {
             >
               Inicio
             </p>
-          </a>
-          <a
-            href="#projects"
-            className="flex items-center my-9 hover:bg-gray-300 rounded-full transition-all duration-250 "
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            className={`flex items-center my-9 hover:bg-gray-300 hover:shadow-md rounded-full transition-all duration-250 cursor-pointer ${
+              showTitles && "bg-white"
+            } `}
           >
             <div className="text-3xl p-2">
               <AiFillFolder />
@@ -42,10 +50,14 @@ const Nav = () => {
             >
               Proyectos
             </p>
-          </a>
-          <a
-            href="#aboutMe"
-            className="flex items-center my-9 hover:bg-gray-300 rounded-full transition-all duration-250 "
+          </Link>
+          <Link
+            to="aboutMe"
+            smooth={true}
+            duration={500}
+            className={`flex items-center my-9 hover:bg-gray-300 hover:shadow-md rounded-full transition-all duration-250 cursor-pointer ${
+              showTitles && "bg-white"
+            } `}
           >
             <div className="text-3xl p-2">
               <BsFillPersonFill />
@@ -55,13 +67,16 @@ const Nav = () => {
                 !showTitles && "-translate-x-2 opacity-0 "
               } `}
             >
-              {" "}
               Sobre mi
             </p>
-          </a>
-          <a
-            href="#contact"
-            className="flex items-center my-9 hover:bg-gray-300 rounded-full transition-all duration-250 "
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className={`flex items-center my-9 hover:bg-gray-300 hover:shadow-md rounded-full transition-all duration-250 cursor-pointer ${
+              showTitles && "bg-white"
+            } `}
           >
             <div className="text-3xl p-2 ">
               <AiFillMessage />
@@ -71,10 +86,10 @@ const Nav = () => {
                 !showTitles && "-translate-x-2 opacity-0 "
               } `}
             >
-              Contactame
+              Contacto
             </p>
-          </a>
-        </div>
+          </Link>
+        </nav>
       </div>
     </>
   );
