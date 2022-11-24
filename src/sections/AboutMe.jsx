@@ -13,7 +13,7 @@ const AboutMe = () => {
           valor para su empresa o startup.
         </p>
       </section>
-      <section className="flex mt-11">
+      <section className="flex flex-col lg:flex-row mt-11">
         <div className="flex flex-col items-center py-10 px-12 mx-3 bg-gray-300 w-[400px] rounded-lg shadow-xl ">
           <h3 className="text-2xl">Educacion</h3>
           <div className="mt-3">
@@ -45,7 +45,7 @@ const AboutMe = () => {
       </section>
       <section className="flex flex-col items-center mt-12">
         <h2 className=" text-3xl font-semibold pt-9 ">Skills</h2>
-        <div className="grid grid-cols-5 gap-8 mt-3 mb-11">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mt-3 mb-11">
           {data.skills.map((skill) => {
             return (
               <SkillCard
