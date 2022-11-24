@@ -4,23 +4,31 @@
       "id": 1,
       "imgPath": "/disneyWorldAPI.webp",
       "title": "Disney World API",
-      "description": "Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
+      "description": "Es una API REST que permite explorar y obtener informacion acerca personajes y peliculas del mundo de Disney. Esta desarrollada en NodeJs con Framework Express y base de datos relacional.",
       "demoLink": "",
-      "ghLink": "https://github.com/EliasPedevilla/API-dondecomer.com"
+      "ghLink": "https://github.com/EliasPedevilla/DisneyWorldAPI"
     },
     {
       "id": 2,
       "imgPath": "/memoriadelviaje.webp",
       "title": "Memoria del viaje",
-      "description": "Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
+      "description": "Es Proyecto de un blog de viajes personales. Tiene como idea principal compartir las vivencias de viajes por el mundo. Esta construida con HTML y CSS.",
       "demoLink": "https://memoria-del-viaje.vercel.app/",
       "ghLink": "https://github.com/EliasPedevilla/Memoria-del-viaje"
     },
     {
       "id": 3,
+      "imgPath": "/somosMas.webp",
+      "title": "API ONG Somos mas",
+      "description": "Es un proyecto hecho con NodeJs. Fue creado en equipo bajo la coordinacion de Alkemy, una plataforma de aprendizaje. La aplicacion fue construida para servir un frontend de la ong con diversas secciones. La API contiene un login y registro, implementacion de mercadopago, servicion de Amazon S3 para el almacenamiento de imagenes y sendgrid para envio de mails",
+      "demoLink": "https://somosmas.up.railway.app/api-docs/",
+      "ghLink": "https://github.com/alkemyTech/OT267-server"
+    },
+    {
+      "id": 3,
       "imgPath": "/dondecomer.webp",
       "title": "dondecomer API",
-      "description": "Pomodoro app helps you create Task list with timer. Features: user can create task,edit tast delete task, task list will persist on page refresh, Timer will start on click of task list, toggle theme, break timer/ focus timer.",
+      "description": "Una API REST para un proyecto personal. Posee un login, carga de datos y menu para restaurantes y a su vez un buscador de comidas o restaurantes con filtros incluidos. Esta hecha con NodeJs, base de datos relacional y envio de mails con Nodemailer.",
       "demoLink": "",
       "ghLink": "https://github.com/EliasPedevilla/API-dondecomer.com"
     }
